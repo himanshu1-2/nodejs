@@ -20,9 +20,26 @@ router.post('/tasks',auth, async (req, res) => {
 })
 
 router.get('/tasks', auth,async (req, res) => {
-    try {
- //this will populate tasks using virtual        
-await req.user.populate('tasks').execPopulate()
+  
+const match={}
+if(req.query.completed)
+match.completed=req.query.completed==='true'
+
+
+  try {
+ 
+
+
+//this will populate tasks using virtual        
+await req.user.populate({
+path:'tasks',
+match,
+options:{
+limit:parseInt(req.query.limit)
+}
+
+
+}).execPopulate()
   res.send(req.user.tasks)
     } catch (e) {
         res.status(500).send()

@@ -1,0 +1,6 @@
+user task ret api
+this api cantains user creation after which authentication is performed and its storage in database it also cantains feature email notification when user sign'sup ,fileuploads,sorting,filtering,pagination .It also cantains test cases to ensure all response
+work correctly 
+
+
+

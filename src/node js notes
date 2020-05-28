@@ -1,0 +1,29 @@
+
+promise is used handle beter asynchrous code
+async is better way to consume promise
+const a=  async function()
+{
+ 
+return await 
+}
+//return consmption
+a().then((data)=>{})
+//function call
+app.post((req,res)=>{})
+mongoose appicable for mongodb object mapping library 
+userSchema({
+name:{}
+
+})
+//authentication rules
+hash the password
+check for match of email and password 
+genrate token defined in model call in post(sign in)
+hide token
+verfiy token in middlware 
+ 
+
+
+file uploads to serve images and other files eg uploading profile ,getting an image
+callback function is function call inside another function who takes it as argument by either its name or declaring function anayomyously
+

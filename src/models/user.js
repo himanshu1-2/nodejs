@@ -57,13 +57,17 @@ type:Buffer
 
 }
 
+},{
+timestamps:true
+
 })
 userSchema.virtual('tasks',{
     ref: 'Task',
     localField: '_id',
     foreignField: 'owner'
 
-})
+},
+)
 
 
 
@@ -74,6 +78,7 @@ user=this
 const userObject=user.toObject()
 delete userObject.password
 delete userObject.tokens
+delete userObject.avatar
 
 return userObject
 }
