@@ -10,6 +10,8 @@ const app = express()
 app.use(express.json())
 app.use(userRouter)
 app.use(taskRouter)
+app.get('/',(req,res)=>{res.send(
+"node connected")})
 module.exports=app
 
 /*
