@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo chmod -R 775 /home/ubuntu/node-projects/generico-crm-node
-cd /home/ubuntu/node-projects/generico-crm-node
+sudo chmod -R 775 /home/ec2-user/nodejs
+cd /home/ec2-user/nodejs
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -10,4 +10,4 @@ export NVM_DIR="$HOME/.nvm"
 
 npm install
 sudo chmod -R 777 public/
-"$NVM_DIR/versions/node/v12.13.0/bin/pm2" reload ./bin/www --update-env
+#"$NVM_DIR/versions/node/v12.13.0/bin/pm2" reload src/index.js --update-env
