@@ -7,7 +7,7 @@ nvm install node
 # aws s3 cp 's3://generico-node-internal/secrets-keep-private/generico-crm-node/staging/staging.env' 'tmp/'
 
 
-DIR="/home/ubuntu/node-projects/generico-crm-node"
+DIR="/home/ec2-user/nodejs"
 if [ -d "$DIR" ]; then
   echo "${DIR} exists"
 else
