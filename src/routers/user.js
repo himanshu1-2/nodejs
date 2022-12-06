@@ -5,6 +5,8 @@ const router = new express.Router()
 const multer = require('multer')
 const {welcomeEmail}=require('../emails/accont')
 
+
+
 router.post('/users', async (req, res) => {
     const user = new User(req.body)
 
