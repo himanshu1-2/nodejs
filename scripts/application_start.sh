@@ -10,8 +10,4 @@ export NVM_DIR="$HOME/.nvm"
 
 npm install
 sudo chmod -R 777 public/
-<<<<<<< HEAD
 #"$NVM_DIR/versions/node/v12.13.0/bin/pm2" reload src/index.js --update-env
-=======
-#"$NVM_DIR/versions/node/v12.13.0/bin/pm2" reload src/index.js --update-env
->>>>>>> c7036b3672dc5bf5e29432e3229807f466668253
