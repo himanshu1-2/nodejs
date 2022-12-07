@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo chmod -R 775 /home/ec2-user/nodejs
-cd /home/ec2-user/nodejs
+sudo chmod -R 775 /home/nodejs
+cd /home/nodejs
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

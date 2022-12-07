@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination:/home/ec2-user/nodejs
+    destination:/home/nodejs
     overwrite: true
 file_exists_behavior: OVERWRITE
 hooks:
@@ -13,8 +13,4 @@ hooks:
   ApplicationStart:
     - location: scripts/application_start.sh
       timeout: 300
-<<<<<<< HEAD
       runas: ubuntu
-=======
-      runas: ubuntu
->>>>>>> c7036b3672dc5bf5e29432e3229807f466668253
