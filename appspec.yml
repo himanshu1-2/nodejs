@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/node-projects/generico-crm-node
+    destination:/home/ec2-user/nodejs
     overwrite: true
 file_exists_behavior: OVERWRITE
 hooks:
