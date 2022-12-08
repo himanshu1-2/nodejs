@@ -9,7 +9,7 @@
 
 #DIR="/home/nodejs"
 #if [ -d "$DIR" ]; then
-  echo "${DIR} exists"
+  echo "hi"
 #else
  # echo "Creating ${DIR} directory"
   #mkdir ${DIR}
